@@ -17,11 +17,11 @@ def getMovieDetail(id):
 
 
 # sending Ids of films to the funtion which return it's details
-value = getMovieDetail("1726")
+value = getMovieDetail('1726')
 IronMan= movie.Movie(value.get('original_title'), value.get('overview'), value.get('poster_path'),
                  "https://www.youtube.com/watch?v=8hYlB38asDY",
                  value.get('release_date'), value.get('vote_average'))
-value = getMovieDetail("550")
+value = getMovieDetail('550')
 FightClub= movie.Movie(value.get('original_title'), value.get('overview'), value.get('poster_path'),
                  "https://www.youtube.com/watch?v=SUXWAEX2jlg",
                  value.get('release_date'), value.get('vote_average'))

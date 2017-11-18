@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.footballgame.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="CricketGame"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/INDIA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:hint="INDIA"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/Pakistan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp"
+            android:hint="Pakistan"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/scoreIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/INDIA"
+            android:layout_marginLeft="90dp"
+            android:hint="0"
+            android:textSize="55sp"
+            />
+        <TextView
+            android:id="@+id/scorePakistan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/Pakistan"
+            android:layout_marginRight="100dp"
+            android:hint="0"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/points4I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreIndia"
+            android:layout_marginLeft="50dp"
+            android:hint="+4 Points"
+            android:onClick="increment4A" />
+        <Button
+            android:id="@+id/points4P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/scorePakistan"
+            android:layout_marginRight="50dp"
+            android:hint="+4 POINTS"
+            android:onClick="increment4B"
+            />
+        <Button
+            android:id="@+id/points6A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/points4I"
+            android:layout_marginLeft="50dp"
+            android:hint="+6 POINTS"
+            android:onClick="increment6A"
+            />
+        <Button
+            android:id="@+id/points6B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/points4P"
+            android:layout_marginRight="50dp"
+            android:hint="+6 POINTS"
+            android:onClick="increment6B"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points6A"
+            android:layout_marginLeft="43dp"
+            android:hint="NoBall"
+            android:onClick="NoBallI"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/points6B"
+            android:layout_marginRight="44dp"
+            android:hint="NoBall"
+            android:onClick="NoBallP"/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Reset"
+        android:onClick="Reset"/>
+
+</LinearLayout>

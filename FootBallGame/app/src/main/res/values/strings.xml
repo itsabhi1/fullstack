@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CricketGame</string>
+    <string name="INDIA">INDIA</string>
+    <string name="ENGLAND">ENGLAND</string>
+    <string name="points4">+4 Points</string>
+    <string name="points6">+6 Points</string>
+    <string name="NoBall">No Ball</string>
+    <string name="Reset">Reset</string>
+    <string name="Score">0</string>
+</resources>
